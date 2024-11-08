@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./image/110.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.rock {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    background: url(./image/th_preview_rev_1.png) center no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+
+.fish {
+    position: absolute;
+    z-index: 10;
+}
+
+.fish-1 {
+    background: url(./image/goldFishSchool.png);
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    top: 70%;
+    right: 0;
+    transform: rotateY(180deg);
+    display: block;
+    animation: fish 15s linear infinite;
+}    
+
+.fish-2 {
+    background: url(./image/diver1.png);
+    background-size: contain;
+    width: 200px;
+    height: 100px;
+    top: 40%;
+    right: 0;
+    transform: rotateY(180deg);
+    display: block;
+    animation: fish1 15s linear infinite;
+}    
+
+.fish-3 {
+    background: url(./image/turtle.png);
+    background-size: contain;
+    width:150px;
+    height: 80px;
+    top: 40%;
+    right: 0;
+    transform: rotateY(180deg);
+    display: block;
+    animation: fish2 25s linear infinite;
+}    
+
+.fish-4 {
+    background: url(./image/cá-16.gif);
+    background-size: contain;
+    width:150px;
+    height: 100px;
+    top: 40%;
+    right: 0;
+    transform: rotateY(180deg);
+    display: block;
+    animation: fish3 14s linear infinite;
+}    
+
+.fish-5 {
+    background: url(./image/cá-77.gif);
+    background-size: contain;
+    width:150px;
+    height: 100px;
+    top: 40%;
+    left: 100;
+    transform: rotateY(180deg);
+    display: block;
+    animation: fish4 30s linear infinite;
+}    
+
+.fish-6 {
+    background: url(./image/cá-17.gif);
+    background-size: contain;
+    width:150px;
+    height: 100px;
+    top: 40%;
+    left: 100;
+    transform: rotateY(180deg);
+    display: block;
+    animation: fish5 30s linear infinite;
+}    
+
+.fish-7 {
+    background: url(./image/goldFishSchool.png);
+    background-size: contain;
+    width:150px;
+    height: 120px;
+    top: 40%;
+    left: 100;
+    transform: rotateY(180deg);
+    display: block;
+    animation: fish6 30s linear infinite;
+}    
+
+.fish-8 {
+    background: url(./image/cá-77.gif);
+    background-size: contain;
+    width:150px;
+    height: 100px;
+    top: 40%;
+    left: 100;
+    transform: rotateY(180deg);
+    display: block;
+    animation: fish7 20s linear infinite;
+}    
+
+.water {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #1d202130;
+    z-index: 11;
+    overflow: hidden;
+}
+.water::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 136px;
+    top: 100%;
+    left: 10%;
+    transform: scale(0.8);
+    background: url(./image/bubble.png) bottom no-repeat;
+    animation: bubble 10s linear infinite;
+}
+
+.water::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 136px;
+    top: 100%;
+    right: 10%;
+    background: url(./image/bubble.png) bottom no-repeat;
+    transform: rotateY(180deg);
+    animation: bubble 15s linear infinite;
+    animation-delay: 5s;
+}
+
+@keyframes bubble {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: calc(0% - 140px);
+    }
+}
+
+@keyframes fish {
+    0% {
+        right: 0;
+        top: 70%;
+        transform: rotateY(180deg);
+    } 50% {
+        right: calc(100% - 80px);
+        top: 40%;
+        transform: rotateY(180deg);
+    } 50.01% {
+        transform: rotateY(0deg);
+        top: 40%;
+    } 100% {
+        right: 0;
+        top: 70%;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes fish1 {
+    0% {
+        right: 0;
+        top: 50%;
+        transform: rotateY(180deg);
+    } 50% {
+        right: calc(100% - 80px);
+        top: 40%;
+        transform: rotateY(180deg);
+    } 50.01% {
+        transform: rotateY(0deg);
+        top: 40%;
+    } 100% {
+        right: 0;
+        top: 50%;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes fish2 {
+    0% {
+        right: 0;
+        top: 70%;
+        transform: rotateY(180deg);
+    } 50% {
+        right: calc(100% - 80px);
+        top: 40%;
+        transform: rotateY(180deg);
+    } 50.01% {
+        transform: rotateY(0deg);
+        top: 40%;
+    } 100% {
+        right: 0;
+        top: 70%;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes fish3 {
+    0% {
+        right: 0;
+        top: 90%;
+        transform: rotateY(180deg);
+    } 50% {
+        right: calc(100% - 80px);
+        top: 40%;
+        transform: rotateY(180deg);
+    } 50.01% {
+        transform: rotateY(0deg);
+        top: 40%;
+    } 100% {
+        right: 0;
+        top: 90%;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes fish4 {
+    0% {
+        right: 0;
+        top: 90%;
+        transform: rotateY(180deg);
+    } 50% {
+        right: calc(100% - 80px);
+        top: 40%;
+        transform: rotateY(180deg);
+    } 50.01% {
+        transform: rotateY(0deg);
+        top: 40%;
+    } 100% {
+        right: 0;
+        top: 90%;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes fish5 {
+    0% {
+        right: 0;
+        top: 100%;
+        transform: rotateY(180deg);
+    } 50% {
+        right: calc(100% - 80px);
+        top: 40%;
+        transform: rotateY(180deg);
+    } 50.01% {
+        transform: rotateY(0deg);
+        top: 40%;
+    } 100% {
+        right: 0;
+        top: 100%;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes fish6 {
+    0% {
+        right: 0;
+        top: 30%;
+        transform: rotateY(180deg);
+    } 50% {
+        right: calc(100% - 80px);
+        top: 10%;
+        transform: rotateY(180deg);
+    } 50.01% {
+        transform: rotateY(0deg);
+        top: 10%;
+    } 100% {
+        right: 0;
+        top: 30%;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes fish7 {
+    0% {
+        right: 0;
+        top: 90%;
+        transform: rotateY(180deg);
+    } 50% {
+        right: calc(100% - 80px);
+        top: 20%;
+        transform: rotateY(180deg);
+    } 50.01% {
+        transform: rotateY(0deg);
+        top: 20%;
+    } 100% {
+        right: 0;
+        top: 10%;
+        transform: rotateY(0deg);
+    }
+}
